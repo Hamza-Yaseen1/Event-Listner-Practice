@@ -113,19 +113,19 @@ section {
     padding-top: 48px;
 }
 
-.view1 {
-    display: none;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
-    background-color: #d3d3d3;
-    color: #000;
+/* Depending on the view example (1, 2, or 3), 
+you will want to set display:none for the other two 
+and display:flex for the example you want to see. */
+#view1 {
+    display: none; /* Hide view 1 */
+}
+
+#view2 {
+    display: none; /* Hide view 2 */
+}
+
+#view3 {
+    display: flex; /* Show view 3 */
 }
 
 .view1 div {
@@ -163,6 +163,7 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    display: none;
     color: #fff;
     max-width: 400px;
     max-height: 60%;
@@ -190,8 +191,7 @@ section {
 }
 
 .view3 {
-    display: none;
-   display:  -webkit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
@@ -231,7 +231,7 @@ section {
     border-radius: 10px;
 } 
 </style>
-<body id="body">
+<body>
   <nav>
     <h1>My Page</h1>
   </nav>
